@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-title">Dashboard</div>
+        <div class="navbar-buttons">
+            <button class="button ghost">Home</button>
+            <button class="button ghost">Search</button>
+            <button class="button outline" id="login-button">Login</button>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <div class="dashboard-content">
+
+        <!-- Horizontal Product List -->
+        <div class="products-section">
+            <h2 class="section-title">Recommended Products</h2>
+            <div class="products-list">
+                <div class="product-card">
+                    <p class="product-name">Product 1</p>
+                    <p class="product-price">$10</p>
+                    <button class="button default">Order</button>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Product 2</p>
+                    <p class="product-price">$15</p>
+                    <button class="button default">Order</button>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Product 3</p>
+                    <p class="product-price">$20</p>
+                    <button class="button default">Order</button>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Product 4</p>
+                    <p class="product-price">$25</p>
+                    <button class="button default">Order</button>
+                </div>
+                <div class="product-card">
+                    <p class="product-name">Product 5</p>
+                    <p class="product-price">$30</p>
+                    <button class="button default">Order</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vertical Orders List -->
+        <div class="orders-section">
+            <h2 class="section-title">Previous Orders</h2>
+            <div class="orders-list">
+                <div class="order-card">
+                    <p class="order-item">Product 1</p>
+                    <p class="order-status">Status: Delivered</p>
+                </div>
+                <div class="order-card">
+                    <p class="order-item">Product 3</p>
+                    <p class="order-status">Status: Pending</p>
+                </div>
+                <div class="order-card">
+                    <p class="order-item">Product 4</p>
+                    <p class="order-status">Status: Shipped</p>
+                </div>
+                <div class="order-card">
+                    <p class="order-item">Product 5</p>
+                    <p class="order-status">Status: Pending</p>
+                </div>
+                <div class="order-card">
+                    <p class="order-item">Product 2</p>
+                    <p class="order-status">Status: Pending</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // JavaScript for login/logout toggle
+        document.getElementById('login-button').addEventListener('click', function() {
+            if (this.textContent === "Login") {
+                this.textContent = "Logout";
+            } else {
+                this.textContent = "Login";
+            }
+        });
+    </script>
+
+</body>
+</html>
